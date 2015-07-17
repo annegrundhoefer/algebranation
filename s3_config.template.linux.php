@@ -1,7 +1,7 @@
 <?php
 
 
-define('BUCKET_DIR', 'http://studyedge.com.s3.amazonaws.com/');
+define('BUCKET_DIR', 'http://algebranation.com.s3.amazonaws.com/');
 define('IMAGE_DIR', BUCKET_DIR . 'images/');
 
 define('AWS_ACCESS_KEY_ID', '');
