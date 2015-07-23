@@ -9,16 +9,12 @@ global $current_blog, $nav;
 
 $pages = array(
 	'./' => 'Home',
-	array(
-		'about/',
-		'about/',
-		'parents/' => 'Parents and Professors',
-	),
-	'services/',
-	'clients/',
+	'students/',
+	'teachers/',
+	'parents/',
+	'districts/',
 	'news/',
-	'contact/',
-	'support/'
+	'about/FAQ/'
 );
 
 $nav = new nav($pages);
@@ -77,10 +73,10 @@ $path = get_path();
 		<div class="sticky">
 			<div class="wrap">
 				<nav>
-					<a href="./login" class="mobile-hide btn small">Login</a>
+					<a href="./login" class="mobile-hide btn small">Use App</a>
 					<div class="text">Menu <span class="icon arrow-down"></span></div>
 					<?php $nav->output() ?>
-					<a href="./login" class="mobile-show">Login</a>
+					<a href="./login" class="mobile-show">Use App</a>
 				</nav>
 				<a class="logo" href="?"><img alt="" src="<?php echo i('logo.png') ?>" /></a>
 			</div>

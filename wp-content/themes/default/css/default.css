@@ -516,7 +516,7 @@ nav div div a:hover {
 
 .home .video {
 	cursor: pointer;
-	background: url('images/banners/home.jpg') no-repeat center;
+	background: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/AN_hero.png') no-repeat center;
 	height: 750px;
 }
 

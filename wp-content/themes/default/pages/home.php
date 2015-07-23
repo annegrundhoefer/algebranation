@@ -10,8 +10,8 @@ $home = end($objects);
 				<h1>Group Interactive Networks (GIN)</h1>
 				<?php echo $home['paragraph'] ?>
 				<br /><br />
-				<a class="btn" href="login/">Login to your GIN System</a> &nbsp;
-				<a class="btn transparent" id="demo-button">Watch Demo</a>
+				<a class="btn" href="login/">Start Using Algebra Nation</a> &nbsp;
+				<a class="btn transparent" id="demo-button">Stay Informed</a>
 			</div>
 			<div class="hover">
 				<b class="white"></b>
@@ -22,7 +22,7 @@ $home = end($objects);
 	</div>
 </div>
 <a class="mobile-show mobile-video" href="<?php echo $home['video_url'] ?>">
-	<img style="display:block" alt="" src="<?php i('banners/home.jpg') ?>" />
+	<img style="display:block" alt="" src="<?php i('2015/07/AN_hero.png') ?>" />
 	<span>
 		<b></b>
 		<img class="play" alt="" src="<?php i('play.png') ?>" />
