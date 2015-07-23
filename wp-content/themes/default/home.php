@@ -8,7 +8,8 @@
 global $nav;
 
 get_header();
-require(file_exists($f = 'pages/' . $nav->getActive() . '.php') ? $f : 'pages/home.php');
+$pages = dirname(__FILE__) . '/pages/';
+require(file_exists($f = $pages . $nav->getActive() . '.php') ? $f : $pages . 'home.php');
 get_footer();
 
 ?>

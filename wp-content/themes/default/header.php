@@ -33,27 +33,27 @@ $path = get_path();
 <head>
 	<meta charset="<?php bloginfo('charset') ?>">
 	<meta name="viewport" content="width=device-width">
-	
+
 	<title><?php bloginfo('name') ?></title>
-	
+
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>">
-	
+
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-	
+
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.php?file=default">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.php">
-	
+
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<base href="<?php echo site_url() ?>/" />
-	
+
 	<?php wp_head() ?>
-	
+
 	<script src="<?php echo get_template_directory_uri() ?>/js/default.js"></script>
 	<script src="<?php echo get_template_directory_uri() ?>/js/functions.js"></script>
-	
+
 	<!-- Typekit -->
 	<script src="//use.typekit.net/gzm3kaq.js"></script>
 	<script type="text/javascript">
