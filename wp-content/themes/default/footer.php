@@ -15,10 +15,10 @@ global $nav;
 			<div class="right">
 				<h3>Stay in Touch</h3>
 				<div class="social">
-					<a href="http://facebook.com/studyedge" target="_blank"><img src="<?php i() ?>social/facebook.png" alt="" /></a>
-					<a href="http://twitter.com/studyedge" target="_blank"><img src="<?php i() ?>social/twitter.png" alt="" /></a>
-					<a href="http://instagram.com/studyedge" target="_blank"><img src="<?php i() ?>social/instagram.png" alt="" /></a>
-					<a href="http://youtube.com/studyedge" target="_blank"><img src="<?php i() ?>social/youtube.png" alt="" /></a>
+					<a href="http://facebook.com/studyedge" target="_blank"><i class="fa fa-facebook" alt="" /></i></a>
+					<a href="http://twitter.com/studyedge" target="_blank"><i class="fa fa-twitter" alt="" /></i></a>
+					<a href="http://instagram.com/studyedge" target="_blank"><i class="fa fa-instagram" alt="" /></i></a>
+					<a href="http://youtube.com/studyedge" target="_blank"><i class="fa fa-youtube" alt="" /></i></a>
 				</div>
 				1-888-97-STUDY<br />
 				<a href="mailto:help@studyedge.com">help@studyedge.com</a><br />

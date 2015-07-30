@@ -1,10 +1,11 @@
+<?php get_header(); ?>
 
 <div class="about">
 <div class="wrap full">
 	<div class="big-image">
 		<div class="overlay">
 			<div class="wrap">
-				<h1>Study Smarter, Not Harder</h1>
+				<h1>Students</h1>
 				<h3>Here at Study Edge, we don't stop at just helping you prepare for exams,<br />
 				we give you the tools and flexibility to be successful on your own terms.</h3>
 			</div>
@@ -90,3 +91,6 @@
 	</div>
 </div>
 
+
+
+<?php get_footer(); ?>

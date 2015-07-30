@@ -10,8 +10,8 @@ $home = end($objects);
 				<h1><?php echo $home['title'] ?></h1>
 				<?php echo $home['paragraph'] ?>
 				<br /><br />
-				<a class="btn" target="_blank" href="http://studyedge.com/app" popup="facebook-app">Start Watching Videos</a> &nbsp;
-				<a class="btn transparent" id="lrs-button" href="#courses">Live Review Schedule</a>
+				<a class="btn" target="_blank" href="http://studyedge.com/app" popup="facebook-app">Start Using Algebra Nation</a> &nbsp;
+				<a class="btn transparent" id="lrs-button" href="#courses">Stay Informed</a>
 			</div>
 			<div class="hover">
 				<b class="white"></b>
@@ -46,35 +46,9 @@ $home = end($objects);
 	<h3>Study Smarter, Not Harder.</h3>
 </a>
 <div class="wrap full">
-	<div class="classes">
-		<div class="wrap">
-			<h2>Select Your Course</h2>
-			<?php
-			$i = 0;
-			$cols = array('','','');
-			global $classes;
-			$classes = empty($classes) ? [] : $classes;
-			$count = count($classes);
-			$per_col = ceil($count/3);
-			$mod = $count % 3;
-			//$classes is defined in header.php as $classes = get_objects('Class', array('code', 'name'), 'code');
-			foreach ($classes as $key => $class) {
-				if ($i < $per_col)
-					$col = 0;
-				elseif ($i < $per_col * 2 - 1 || ($i == $per_col * 2 - 1 && ($mod == 2 || $mod == 0)))
-					$col = 1;
-				else
-					$col = 2;
-				$cols[$col] .= '<a href="class?class=' . $class['id'] . '"><b>' . $class['code'] . '</b> - ' . $class['name'] . '</a>';
-				$i++;
-			}
-			echo '<div class="col-3">' . implode('</div><div class="col-3">', $cols) . '</div>';
-			?>
-			<div class="clear"></div>
-		</div>
-	</div>
+
 	<div class="experts mobile-hide">
-		<h2>The Study Experts</h2>
+		<h2>Meet the Team</h2>
 		<div>
 			<?php
 			$i = $r = 0;

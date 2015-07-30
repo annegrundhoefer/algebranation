@@ -192,7 +192,7 @@ small {
 	color: #5a5b6c;
 }
 
-.col-3, .col-40, .col-45, .col-55, .col-500 {
+.col-3, .col-40, .col-45, .col-55, .col-500,.col-75 {
 	float: left;
 	min-height: 1px;
 }
@@ -204,6 +204,15 @@ small {
 
 .col-40 {
 	width: 40%;
+}
+
+.col-75 {
+	width: 70%;
+}
+
+.col-20 {
+	width: 20%;
+	float:right;
 }
 
 .col-45 {
@@ -269,9 +278,10 @@ h2.centered {
 .big-image {
 	margin: 0 0 60px;
 	text-align: center;
-	background: url('images/samples/tutors.jpg') no-repeat center rgb(29,168,212);
+	background: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/students.jpeg') no-repeat center rgb(29,168,212);
 	text-shadow: 1px 1px 0 rgba(0,0,0,.3);
 	color: #fff;
+	width: 100% !important;
 }
 
 .big-image h1 {
@@ -317,7 +327,7 @@ h2.centered {
 	background: rgba(29, 168, 212, 0.15);
 }
 
-.about h2, .parents h2, .class h2 {
+.about h2, .parents h2, .class h2, .teachers h2, .districts h2 {
 	font-size: 21px;
 	line-height: 25px;
 }
@@ -353,7 +363,7 @@ h2.centered {
  */
 
 header {
-	height: 111px;
+	height: 0px;
 	position: relative;
 }
 
@@ -512,7 +522,7 @@ nav div div a:hover {
 
 .home .video {
 	cursor: pointer;
-	background: url('images/banners/home.jpg') no-repeat center;
+	background: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/AN_hero.png') no-repeat center;
 	height: 750px;
 }
 
@@ -1381,7 +1391,7 @@ footer .social a:hover img {
 
 .faq .big-image {
 	margin: 0 0 20px;
-	background-image: url('images/banners/faq.jpg');
+	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/faq.jpeg');
 }
 
 /*
@@ -1497,10 +1507,26 @@ footer .social a:hover img {
  */
 
 .parents .big-image {
-	background-image: url('images/banners/parentsprofessors.jpg');
+	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/parents.jpeg');
 }
 
 .parents .wrap.blue {
+	padding: 40px 0 25px;
+}
+
+.teachers .big-image {
+	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/teachers.jpeg');
+}
+
+.teachers.wrap.blue {
+	padding: 40px 0 25px;
+}
+
+.districts .big-image {
+	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/districts.jpeg');
+}
+
+.districts.wrap.blue {
 	padding: 40px 0 25px;
 }
 

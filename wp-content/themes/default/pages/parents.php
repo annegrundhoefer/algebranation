@@ -1,16 +1,29 @@
+<?php get_header(); ?>
 
-<div class="about">
+<div class="parents">
 <div class="wrap full">
-	<div class="big-image">
+	<div class="big-image short">
 		<div class="overlay">
 			<div class="wrap">
-				<h1>Study Smarter, Not Harder</h1>
-				<h3>Here at Study Edge, we don't stop at just helping you prepare for exams,<br />
-				we give you the tools and flexibility to be successful on your own terms.</h3>
+				<h1>Parents and Professors</h1>
+				<h3>We give students the EDGE they need with their studies.</h3>
 			</div>
 		</div>
 	</div>
 </div>
+<div class="wrap mobile-padded">
+	<div class="col-40">
+		<a class="about-video vid-preview" href="http://studyedge.com.s3.amazonaws.com/videos/parents.mp4">
+			<img alt="" src="http://studyedge.com.s3.amazonaws.com/images/about-thumb.png" />
+			<b></b>
+		</a>
+	</div>
+	<div class="col-55 ml-5">
+		<h2>We are dedicated to providing superior educational services to college students at an affordable price.</h2>
+		<p>We are focused on a continuous learning model, as opposed to hosting cram sessions a few days before an exam, which better serves students and ultimately assists them in truly mastering class content. Study Edge offers services for many historically difficult courses. Across the country, these are commonly courses in chemistry, economics, mathematics, statistics, and physics, just to name a few. At the University of Florida, which has an all student average GPA of 3.30, students who are Study Edge membershave an average GPA of 3.53 (based on nearly 10,000 membership submissions)!</p>
+		<p>Research has shown that students do not perceive studying as cool. This negative connotation associated with studying is preventing students from reaching their full potential. We have made it our goal at Study Edge to make studying a cool, social activity for students by creating a Study Edge Facebook page, as well as a Facebook, iPhone/iPad, and Android apps. Our presence on Facebook will integrate studying and class discussions into a prominent medium students are already using for socializing.</p>
+	</div>
+	
 
 <div class="testimonials tk-museo-slab mobile-hide">
 		<div class="wrap">
@@ -61,19 +74,7 @@
 		}
 		?>
 	</div>
-
-<div class="wrap mobile-padded">
-	<div class="col-55">
-		<h2>Our content is comprehensive and includes everything from practice problems to Exam Reviews.</h2>
-		<p>We know that everyone learns differently, and as such we've developed content to meet the needs of all kinds of learners. All of our material is created by our Study Experts, who have spent years not only becoming experts in their respective areas, but also teaching the material so students can study smarter – not harder!</p>
-		<p>Review Sessions are offered in one of two formats depending on your course: live and in-person, or on video through our Facebook and mobile apps. For many classes there are also textbook solutions, old exam solutions, individual concept explanations, solutions to sample questions, and more, all created by the Study Experts. Everything you need to succeed is available on the Study Edge Facebook and mobile apps! Check out the video above to see the type of videos found on our app!</p>
-	</div>
-	<div class="col-40 ml-5 mobile-hide">
-		<img alt="" src="http://studyedge.com.s3.amazonaws.com/images/samples/live-review.jpg" />
-	</div>
-	<div class="clear space mobile-hide"></div>
-	<h2> feedback blurb and feedback form goes here</h2>
-</div>
+	
 <div class="wrap full text-link mobile-hide">
 	<div class="wrap">
 		<div class="col-55">
@@ -89,4 +90,5 @@
 		<div class="clear"></div>
 	</div>
 </div>
-
+</div>
+<?php get_footer(); ?>
