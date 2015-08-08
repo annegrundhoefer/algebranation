@@ -1,4 +1,5 @@
 <?php
+get_header();
 $objects = get_objects('Home Page', array('experts', 'paragraph', 'video_url', 'title'));
 $home = end($objects);
 ?>
@@ -168,3 +169,4 @@ $home = end($objects);
 <div class="video-overlay">
 	<b></b>
 </div>
+<?php get_footer(); ?>

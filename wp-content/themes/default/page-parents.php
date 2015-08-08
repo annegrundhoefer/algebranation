@@ -4,7 +4,7 @@
 	<div class="big-image short">
 		<div class="overlay">
 			<div class="wrap">
-				<h1>Parents</h1>
+				<h1>Parents and Professors</h1>
 				<h3>We give students the EDGE they need with their studies.</h3>
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 		<p>We are focused on a continuous learning model, as opposed to hosting cram sessions a few days before an exam, which better serves students and ultimately assists them in truly mastering class content. Study Edge offers services for many historically difficult courses. Across the country, these are commonly courses in chemistry, economics, mathematics, statistics, and physics, just to name a few. At the University of Florida, which has an all student average GPA of 3.30, students who are Study Edge membershave an average GPA of 3.53 (based on nearly 10,000 membership submissions)!</p>
 		<p>Research has shown that students do not perceive studying as cool. This negative connotation associated with studying is preventing students from reaching their full potential. We have made it our goal at Study Edge to make studying a cool, social activity for students by creating a Study Edge Facebook page, as well as a Facebook, iPhone/iPad, and Android apps. Our presence on Facebook will integrate studying and class discussions into a prominent medium students are already using for socializing.</p>
 	</div>
-	
+
 
 <div class="testimonials tk-museo-slab mobile-hide">
 		<div class="wrap">
@@ -73,7 +73,7 @@
 		}
 		?>
 	</div>
-	
+
 <div class="wrap full text-link mobile-hide">
 	<div class="wrap">
 		<div class="col-55">

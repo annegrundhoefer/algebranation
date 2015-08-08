@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="about">
 <div class="wrap full">
 	<div class="big-image">
@@ -73,7 +72,30 @@
 		<img alt="" src="http://studyedge.com.s3.amazonaws.com/images/samples/live-review.jpg" />
 	</div>
 	<div class="clear space mobile-hide"></div>
-	<h2> feedback blurb and feedback form goes here</h2>
+	<div class="col-40">
+		<form class="form-horizontal" method="post" action="google-form-url">
+			<div class="form-group">
+				<div class="col-40">
+					<label for="name" class="control-label">Name</label>
+				</div>
+				<div class="col-55 ml-5">
+					<input type="text" class="form-control" />
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="form-group">
+				<div class="col-40"></div>
+				<div class="col-55 ml-5" style="text-align: left">
+					<input type="submit" class="btn blue" value="Send Feedback" />
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="col-55 ml-5">
+		<h2>Feedback</h2>
+		<p>Send us feedback using the form on the left.</p>
+	</div>
+	<div class="clear space mobile-hide"></div>
 </div>
 <div class="wrap full text-link mobile-hide">
 	<div class="wrap">
@@ -90,7 +112,5 @@
 		<div class="clear"></div>
 	</div>
 </div>
-
-
-
+</div>
 <?php get_footer(); ?>
