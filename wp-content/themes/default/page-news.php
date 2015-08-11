@@ -61,19 +61,10 @@
             <h3>Subscribe to our newsletter</h3>
     		<form class="form-horizontal" method="post" action="google-form-url">
     			<div class="form-group">
-    				<div class="col-25">
-    					<label for="name" class="control-label">Name</label>
+    				<div class="col-50">
+    					<label for="name" class="control-label">Email Address</label>
     				</div>
-    				<div class="col-70 ml-5">
-    					<input type="text" class="form-control" />
-    				</div>
-    				<div class="clear"></div>
-    			</div>
-                <div class="form-group">
-    				<div class="col-25">
-    					<label for="name" class="control-label">Email</label>
-    				</div>
-    				<div class="col-70 ml-5">
+    				<div class="col-300">
     					<input type="text" class="form-control" />
     				</div>
     				<div class="clear"></div>

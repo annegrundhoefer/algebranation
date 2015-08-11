@@ -206,6 +206,11 @@ small {
 	width: 500px;
 }
 
+.col-300 {
+	width: 300px;
+	margin: 10px auto;
+}
+
 .ml-5 {
 	margin-left: 5%;
 }
