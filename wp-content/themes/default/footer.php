@@ -15,16 +15,14 @@ global $nav;
 			<div class="right">
 				<h3>Stay in Touch</h3>
 				<div class="social">
-					<a href="http://facebook.com/studyedge" target="_blank"><i class="fa fa-facebook" alt="" /></i></a>
-					<a href="http://twitter.com/studyedge" target="_blank"><i class="fa fa-twitter" alt="" /></i></a>
-					<a href="http://instagram.com/studyedge" target="_blank"><i class="fa fa-instagram" alt="" /></i></a>
-					<a href="http://youtube.com/studyedge" target="_blank"><i class="fa fa-youtube" alt="" /></i></a>
+					<a href="http://facebook.com/algebranation" target="_blank"><i class="fa fa-facebook" alt="" /></i></a>
+					<a href="http://twitter.com/algebranation" target="_blank"><i class="fa fa-twitter" alt="" /></i></a>
+					<a href="http://instagram.com/algebranation" target="_blank"><i class="fa fa-instagram" alt="" /></i></a>
+					<a href="http://youtube.com/algebranation" target="_blank"><i class="fa fa-youtube" alt="" /></i></a>
 				</div>
-				1-888-97-STUDY<br />
-				<a href="mailto:help@studyedge.com">help@studyedge.com</a><br />
-				1717 NW 1st Ave.<br />
-				Gainesville, FL 32603<br />
-				Sunday-Friday, 11am-8pm
+				1-888-608-MATH<br />
+				<a href="mailto:help@algebranation.com">help@algebranation.com</a><br />
+				
 			</div>
 			<div class="clear"></div>
 			<div class="copy">

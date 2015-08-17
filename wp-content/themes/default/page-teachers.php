@@ -116,7 +116,6 @@
 	<div class="wrap">
 		<div class="col-55">
 			<h1>Get Our Mobile App</h1>
-			<small>or go to <a href="mobile">studyedge.com/mobile</a></small>
 		</div>
 		<form id="send-link-form" class="col-40 ml-5" method="post" onsubmit="return false;">
 			<i>We will text you a link!</i>

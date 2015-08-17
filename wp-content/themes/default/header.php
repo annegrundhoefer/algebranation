@@ -74,12 +74,14 @@ $path = get_path();
 		<div class="sticky">
 			<div class="wrap">
 				<nav>
+				<div class="logo">
+				<a href="?"><img alt="" src="<?php echo i('logo.png') ?>" /></a>
+				</div>
 					<a href="./login" class="mobile-hide btn small">Use App</a>
 					<div class="text">Menu <span class="icon arrow-down"></span></div>
 					<?php $nav->output() ?>
 					<a href="./login" class="mobile-show">Use App</a>
 				</nav>
-				<a class="logo" href="?"><img alt="" src="<?php echo i('logo.png') ?>" /></a>
 			</div>
 		</div>
 	</header>

@@ -87,6 +87,20 @@ small {
 	background: #555;
 }
 
+.logo {
+	max-width: 200px;
+}
+
+.logo a {
+	margin: 0px auto;
+	padding: 0px 0px;
+}
+
+.logo img {
+	width: 46%;
+	margin: 0px auto;
+	padding: 0px 0px;
+}
 .wrap.packets {
 	background: url('images/packets.png');
 	height: 229px;
@@ -272,6 +286,25 @@ input.form-control {
 	display: block;
     width: 100%;
     height: 34px;
+    padding: 6px 12px;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    box-sizing: border-box;
+}
+
+textarea.form-control {
+	display: block;
+    width: 100%;
     padding: 6px 12px;
     margin: 8px 0;
     font-size: 14px;
@@ -1098,10 +1131,13 @@ footer h3 {
 	font-style: italic;
 	font-family: 'museo-sans', sans-serif;
 	font-size: 21px;
+	padding-bottom: 15px;
 }
 
-footer .social img {
+footer .social i {
+	padding-bottom: 10px;
 	width: 30px;
+	font-size: 22px;
 	opacity: .7;
 	transition: opacity .5s;
 	-moz-transition: opacity .5s;

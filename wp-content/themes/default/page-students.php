@@ -81,6 +81,12 @@
 				<div class="col-55 ml-5" style="margin-bottom: 15px;" >
 					<input type="text" class="form-control" />
 				</div>
+				<div class="col-40">
+					<label for="name" class="control-label">Email</label>
+				</div>
+				<div class="col-55 ml-5" style="margin-bottom: 15px;" >
+					<input type="text" class="form-control" />
+				</div>
 				<div class="clear"></div>
 				<div class="col-40">
 					<label for="name" class="control-label">Feedback</label>
@@ -93,7 +99,7 @@
 			<div class="form-group">
 				<div class="col-70"></div>
 				<div class="col-55" style="text-align: left">
-					<input type="submit" class="btn blue" value="Send Feedback" />
+					<input type="submit" class="btn blue" value="Send Feedback" style="margin: 0px auto;"/>
 				</div>
 			</div>
 		</form>
@@ -108,7 +114,6 @@
 	<div class="wrap">
 		<div class="col-55">
 			<h1>Get Our Mobile App</h1>
-			<small>or go to <a href="mobile">studyedge.com/mobile</a></small>
 		</div>
 		<form id="send-link-form" class="col-40 ml-5" method="post" onsubmit="return false;">
 			<i>We will text you a link!</i>
