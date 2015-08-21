@@ -76,6 +76,7 @@ function get_object($post_id, $meta_keys = false, $use_id = true) {
 }
 
 function get_objects($post_title, $meta_keys = false, $sort_by = false, $limit = false) {
+	global $wpdb;
 	$objects = $object = array();
 	if ($meta_keys)
 		sort($meta_keys);
