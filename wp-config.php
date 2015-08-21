@@ -34,6 +34,9 @@ define('WP_DEBUG', $_SERVER['SERVER_NAME'] == 'localhost' ? true : defined('WP_D
 if (!defined('ABSPATH'))
 	define('ABSPATH', dirname(__FILE__) . '/');
 
+if (!defined('NEWS_CATEGORY_ID'))
+	define('NEWS_CATEGORY_ID', 2);
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

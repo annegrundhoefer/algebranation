@@ -14,7 +14,7 @@
     <div class="col-70">
         <?php
 
-        $args = array( 'posts_per_page' => -1 );
+        $args = array( 'cat' => NEWS_CATEGORY_ID, 'posts_per_page' => -1 );
 
         $wp_query = new WP_Query($args);
 

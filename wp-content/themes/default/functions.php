@@ -7,6 +7,8 @@ remove_filter('the_content', 'wpautop');
 add_filter('show_admin_bar', '__return_false');
 add_action('wp_enqueue_scripts', 'init');
 
+add_theme_support( 'post-thumbnails' );
+
 function init() {
 	wp_enqueue_script('jquery');
 }
@@ -61,11 +63,11 @@ function get_object($post_id, $meta_keys = false, $use_id = true) {
 	$where = "WHERE post_id ";
 	$where .= $use_id ? "= '{$post_id}'" : "IN (SELECT ID FROM {$wpdb->prefix}posts WHERE post_title = '{$post_id}')";
 	$where .= $meta_keys ? " AND meta_key IN ('" . implode($meta_keys, "','") . "')" : '';
-	$get_meta = mysql_query(
+	$get_meta = $wpdb->get_results(
 		$q="SELECT post_id, meta_key, meta_value
 			FROM {$wpdb->prefix}postmeta $where
 			ORDER BY meta_key ASC");
-	while ($meta = mysql_fetch_object($get_meta)) {
+	foreach ($metas as $meta) {
 		$object['id'] = $meta->post_id;
 		$object[$meta->meta_key] = $meta->meta_value;
 	}
@@ -78,9 +80,9 @@ function get_objects($post_title, $meta_keys = false, $sort_by = false, $limit =
 	if ($meta_keys)
 		sort($meta_keys);
 
-	$get_meta = mysql_query(make_query($post_title, $meta_keys, $limit));
+	$metas = $wpdb->get_results(make_query($post_title, $meta_keys, $limit));
 	$i = $last_id = 0;
-	while ($meta = mysql_fetch_object($get_meta)) {
+	foreach ($metas as $meta) {
 		if ($meta->post_id != $last_id && $last_id != 0) {
 			$key = $sort_by ? $object[$sort_by] : $i;
 			$objects[$key] = $object;
@@ -90,7 +92,7 @@ function get_objects($post_title, $meta_keys = false, $sort_by = false, $limit =
 		$object['id'] = $last_id = $meta->post_id;
 		$object[$meta->meta_key] = $meta->meta_value;
 	}
-	
+
 	if (empty($object))
 		return array();
 
@@ -105,7 +107,7 @@ function get_objects($post_title, $meta_keys = false, $sort_by = false, $limit =
 
 function get_post_by_title($title) {
 	global $wpdb;
-	$post = mysql_fetch_object(mysql_query("SELECT post_content FROM {$wpdb->prefix}posts WHERE post_title = '$title' AND post_status = 'publish' LIMIT 1"));
+	$post = $wpdb->get_row("SELECT post_content FROM {$wpdb->prefix}posts WHERE post_title = '$title' AND post_status = 'publish' LIMIT 1");
 	if (!$post) {
 		$blog_id = get_current_blog_id();
 		$base_prefix = $wpdb->base_prefix;
@@ -113,7 +115,7 @@ function get_post_by_title($title) {
 			$blog_id--;
 			if ($blog_id == 1) $prefix = $base_prefix;
 			else $prefix = "{$base_prefix}{$blog_id}_";
-			$post = mysql_fetch_object(mysql_query("SELECT post_content FROM {$prefix}posts WHERE post_title = '$title' AND post_status = 'publish' LIMIT 1"));
+			$post = $wpdb->get_row("SELECT post_content FROM {$prefix}posts WHERE post_title = '$title' AND post_status = 'publish' LIMIT 1");
 			if (!$post && $blog_id == 0) return false;
 		}
 	}
@@ -129,7 +131,7 @@ function display_page($title) {
 	}
 }
 
-$get_settings = mysql_query(
+$dbSettings = $wpdb->get_results(
 	$q="SELECT `meta_key`, `meta_value`
 		FROM wp_postmeta
 		WHERE post_id IN (
@@ -139,7 +141,7 @@ $get_settings = mysql_query(
 				AND post_status != 'inherit'
 				AND post_status != 'trash' ORDER BY post_id DESC)
 		ORDER BY meta_key ASC");
-while ($setting = mysql_fetch_object($get_settings)) {
+foreach ($dbSettings as $setting) {
 	$settings[$setting->meta_key] = $setting->meta_value;
 }
 
