@@ -56,11 +56,11 @@ $path = get_path();
 	<script src="<?php echo get_template_directory_uri() ?>/js/functions.js"></script>
 
 	<!-- Typekit -->
-	<script src="//use.typekit.net/gzm3kaq.js"></script>
-	<script type="text/javascript">
+	<script src="//use.typekit.net/akr8gnn.js"></script>
+	<script>
 		try{
-			Typekit.load();
-		} catch(e){}
+			Typekit.load({ async: true });
+		}catch(e){}
 	</script>
 
 	<!--
