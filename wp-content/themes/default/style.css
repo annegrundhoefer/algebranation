@@ -383,7 +383,7 @@ h2.centered {
 .big-image {
 	margin: 0 0 60px;
 	text-align: center;
-	background: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/students.jpeg') no-repeat center rgb(29,168,212);
+	background: url('images/students.jpeg') no-repeat center rgb(29,168,212);
 	text-shadow: 1px 1px 0 rgba(0,0,0,.3);
 	color: #fff;
 	width: 100% !important;
@@ -627,7 +627,7 @@ nav div div a:hover {
 
 .home .video {
 	cursor: pointer;
-	background: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/AN_hero.png') no-repeat center;
+	background: url('images/AN_hero.png') no-repeat center;
 	height: 750px;
 }
 
@@ -1499,7 +1499,7 @@ footer .social a:hover img {
 
 .faq .big-image {
 	margin: 0 0 20px;
-	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/faq.jpeg');
+	background-image: url('images/faq.jpeg');
 }
 
 /*
@@ -1615,7 +1615,7 @@ footer .social a:hover img {
  */
 
 .parents .big-image {
-	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/parents.jpeg');
+	background-image: url('images/parents.jpeg');
 }
 
 .parents .wrap.blue {
@@ -1623,7 +1623,7 @@ footer .social a:hover img {
 }
 
 .teachers .big-image {
-	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/teachers.jpeg');
+	background-image: url('images/teachers.jpeg');
 }
 
 .teachers.wrap.blue {
@@ -1631,7 +1631,7 @@ footer .social a:hover img {
 }
 
 .districts .big-image {
-	background-image: url('http://localhost:8888/algebranation/wp-content/uploads/2015/07/districts.jpeg');
+	background-image: url('images/districts.jpeg');
 }
 
 .districts.wrap.blue {
