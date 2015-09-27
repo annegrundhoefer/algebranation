@@ -1,17 +1,11 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
-
-# add a trailing slash to /wp-admin
-RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?wp-content/uploads/(.*) - [L]
-
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-RewriteRule ^[_0-9a-zA-Z-]+/(wp-(content|admin|includes).*) $1 [L]
-RewriteRule ^[_0-9a-zA-Z-]+/(.*\.php)$ $1 [L]
-RewriteRule . index.php [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
 
 # BEGIN W3TC Browser Cache
 <IfModule mod_deflate.c>
