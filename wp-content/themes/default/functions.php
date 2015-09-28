@@ -9,6 +9,47 @@ add_action('wp_enqueue_scripts', 'init');
 
 add_theme_support( 'post-thumbnails' );
 
+// Shortcodes
+add_shortcode('get-our-app', 'shortcode_get_our_app');
+add_shortcode('testimonials', 'shortcode_testimonials');
+add_shortcode('experts', 'shortcode_experts');
+add_shortcode('news', 'shortcode_news');
+
+function shortcode_get_our_app() {
+	ob_start();
+	display_page('get-our-app');
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $output;
+}
+
+function shortcode_experts($params = []) {
+	ob_start();
+	$params = shortcode_atts([
+		'ids' => [],
+	], $params);
+	require 'includes/experts.php';
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $output;
+}
+
+function shortcode_testimonials() {
+	ob_start();
+	require 'includes/testimonials.php';
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $output;
+}
+
+function shortcode_news() {
+	ob_start();
+	require 'includes/news.php';
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $output;
+}
+
 function init() {
 	wp_enqueue_script('jquery');
 }
@@ -108,7 +149,7 @@ function get_objects($post_title, $meta_keys = false, $sort_by = false, $limit =
 
 function get_post_by_title($title) {
 	global $wpdb;
-	$post = $wpdb->get_row("SELECT post_content FROM {$wpdb->prefix}posts WHERE post_title = '$title' AND post_status = 'publish' LIMIT 1");
+	$post = $wpdb->get_row("SELECT post_content FROM {$wpdb->prefix}posts WHERE post_title = '$title' AND (post_status = 'publish' OR post_status = 'private') LIMIT 1");
 	if (!$post) {
 		$blog_id = get_current_blog_id();
 		$base_prefix = $wpdb->base_prefix;
@@ -116,7 +157,7 @@ function get_post_by_title($title) {
 			$blog_id--;
 			if ($blog_id == 1) $prefix = $base_prefix;
 			else $prefix = "{$base_prefix}{$blog_id}_";
-			$post = $wpdb->get_row("SELECT post_content FROM {$prefix}posts WHERE post_title = '$title' AND post_status = 'publish' LIMIT 1");
+			$post = $wpdb->get_row("SELECT post_content FROM {$prefix}posts WHERE post_title = '$title' AND (post_status = 'publish' OR post_status = 'private') LIMIT 1");
 			if (!$post && $blog_id == 0) return false;
 		}
 	}
@@ -128,7 +169,7 @@ function display_page($title) {
 	if (!$post) {
 		echo 'Please add a page with the title "' . $title . '".';
 	} else {
-		echo $post->post_content;
+		echo do_shortcode($post->post_content);
 	}
 }
 

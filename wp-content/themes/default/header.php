@@ -14,7 +14,7 @@ $pages = array(
 	'parents/',
 	'districts/',
 	'news/',
-	'about/FAQ/'
+	'faq/' => 'About/FAQ',
 );
 
 $nav = new nav($pages);

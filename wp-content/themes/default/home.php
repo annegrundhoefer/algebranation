@@ -14,6 +14,6 @@ require(file_exists($f = $pages . $nav->getActive() . '.php') ? $f : $pages . 'h
 get_footer();
 */
 
-require('page-home.php');
-
-?>
+get_header();
+display_page('home');
+get_footer();
